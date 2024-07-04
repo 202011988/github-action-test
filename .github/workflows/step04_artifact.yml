@@ -1,0 +1,17 @@
+# artifact: CI 빌드 -> 테스트를 통해 만들어진 결과물
+name: step04_artifact
+on: workflow_dispatch
+
+jobs:
+  job_1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Create output.txt
+      id: output
+      run: |
+        echo "artifact output" > output.txt
+    - name: Upload output.txt
+      uses: actions/upload-artifact@v3
+      with: 
+        name: output
+        path: output.txt
