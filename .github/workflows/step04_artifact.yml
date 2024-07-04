@@ -21,10 +21,9 @@ jobs:
     steps:
     - name: Download output.txt
       uses: actions/download-artifact@v3
-      with: 
+      with:
         name: output
     - name: Print output.txt
-      uses: actions/download-artifact@v3
-      with: 
-        run: |
-          cat output.txt
+      run: |
+        cat output.txt
+
