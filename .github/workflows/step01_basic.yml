@@ -9,3 +9,10 @@ jobs:
     - name: Build Project
       run: |
         echo "Build Project"
+  deploy:
+    needs: build #build 수행 이후 deploy 수행
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy Project
+      run: |
+        echo "Deploy Project"
