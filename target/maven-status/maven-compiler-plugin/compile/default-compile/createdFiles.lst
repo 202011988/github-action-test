@@ -1,0 +1,6 @@
+com\spring\linux\common\config\WebConfig.class
+com\spring\linux\dept\repository\DeptRepository.class
+com\spring\linux\dept\service\DeptService.class
+com\spring\linux\dept\controller\DeptController.class
+com\spring\linux\dept\entity\Dept.class
+com\spring\linux\LinuxDeptTApplication.class
